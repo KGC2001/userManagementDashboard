@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="user.css">
+    <script defer src="user.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>User Management Dashboard</h1>
+        </header>
+
+        <section class="user-form">
+            <h2 id="formTitle">Add User</h2>
+            <form id="userForm">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" placeholder="enter firstName...." required>
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" placeholder="enter lastName...." required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="enter email...." required>
+
+                <label for="department">Department</label>
+                <input type="text" id="department" placeholder="enter department name...." required>
+
+                <input type="hidden" id="userId">
+
+                <button type="submit">Save</button>
+            </form>
+        </section>
+
+        <section class="user-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="userTableBody">
+                    <!-- User rows will be inserted dynamically here -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    
+</body>
+</html>
